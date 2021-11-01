@@ -50,9 +50,9 @@
         display: flex;
     }
     .header__sort-link:hover {
-        font-weight: 600;
         color: #e41728;
-        background-color: #c0e0ec;
+        font-weight: 700;
+        background-color: #d4e2e7;
     }
     .banner {
         display: none;
