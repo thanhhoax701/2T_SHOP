@@ -769,7 +769,7 @@ input[type="checkbox"]:checked+.login__form-form-label span::after {
 
 .nav__bars-btn {
     color: #fff;
-    margin-right: -12px;
+    margin-right: -6px;
     display: none;
     font-size: 2.6rem;
 }
@@ -895,7 +895,7 @@ input[type="checkbox"]:checked+.login__form-form-label span::after {
 }
 
 .header__mobile-search-icon {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     color: #fff;
 }
 
