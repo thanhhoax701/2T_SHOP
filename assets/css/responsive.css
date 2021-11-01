@@ -127,6 +127,9 @@
         animation: mobileSearchSideIn linear 0.3s;
         display: none;
     }
+    .header__search-select {
+        display: none;
+    }
     .header__search-history {
         position: fixed;
         width: 100%;
