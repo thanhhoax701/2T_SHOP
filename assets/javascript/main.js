@@ -9,7 +9,7 @@ $(document).ready(function() {
         prevArrow: "<button type='button' class='slick-prev slick-arrow'><i class='fas fa-arrow-left'></i></button>",
         nextArrow: "<button type='button' class='slick-next slick-arrow'><i class='fas fa-arrow-right' aria-hidden='true'></i></button>",
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2000,
         responsive: [{
                 breakpoint: 1024,
                 settings: {
