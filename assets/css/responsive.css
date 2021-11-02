@@ -87,6 +87,9 @@
     .header__search {
         margin: 0 0 0 36px;
     }
+    .nav__bars-btn {
+        margin-left: 9px;
+    }
 }
 
 
@@ -110,9 +113,14 @@
     .header-with-search {
         justify-content: space-between;
     }
-    .header__cart,
+    .header__cart {
+        margin-right: -24px;
+        text-align: right;
+        width: unset;
+    }
     .header__logo {
         width: unset;
+        margin-right: 36px;
     }
     .header__search {
         position: fixed;

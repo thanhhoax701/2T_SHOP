@@ -770,6 +770,7 @@ input[type="checkbox"]:checked+.login__form-form-label span::after {
 .nav__bars-btn {
     color: #fff;
     margin-right: -6px;
+    margin-left: -18px;
     display: none;
     font-size: 2.6rem;
 }
@@ -2262,7 +2263,7 @@ label.star:before {
 
 .footer-active-up-icon {
     color: var(--white-color);
-    padding: 13px 15px;
+    padding: 13px 14px;
     background-color: var(--black-color);
     font-size: 1.5rem;
     border-radius: 50%;
