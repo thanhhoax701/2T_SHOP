@@ -54,12 +54,6 @@
         font-weight: 700;
         background-color: #d4e2e7;
     }
-    .banner {
-        display: none;
-    }
-    .sticky-sidebar {
-        display: none;
-    }
     /* Nav mobile */
     .nav__bars-btn {
         display: block;
@@ -102,6 +96,25 @@
     }
     .hide-on-mobile {
         display: none;
+    }
+    .image {
+        height: 120px;
+    }
+    .image-title {
+        font-size: 16px;
+    }
+    .image-sale {
+        font-size: 14px;
+    }
+    .slick-arrow {
+        top: 26%;
+        width: 20px;
+        height: 20px;
+    }
+    .slick-prev,
+    .slick-next {
+        font-size: 12px;
+        background-color: #b6bbce;
     }
     .app__content {
         margin: 0 -18px;
@@ -182,14 +195,5 @@
     .footer__download-app-link {
         display: block;
         padding: 0 0 10px 8px;
-    }
-    .image {
-        height: 120px;
-    }
-    .image-title {
-        font-size: 16px;
-    }
-    .image-sale {
-        font-size: 12px;
     }
 }
