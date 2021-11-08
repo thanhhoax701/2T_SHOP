@@ -1844,20 +1844,39 @@ figure.snip0058.hover:after {
     list-style: none;
 }
 
-.sub-menu_item a {
+.sub-menu_link {
     font-size: 1.4rem;
     line-height: 2.4rem;
     color: #000;
     text-decoration: none;
+    position: relative;
 }
 
-.sub-menu_item a:hover {
+.sub-menu_link:hover {
     font-weight: 500;
     color: var(--primary-color);
 }
 
+.sub-menu_link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 30px;
+    left: 0px;
+    right: -10px;
+    top: calc(50% - 6px);
+    transform: translateY(-50%);
+    border-bottom: 1px solid #f30606;
+    transition: width ease-in 0.4s;
+}
+
+.sub-menu_link:hover::after {
+    width: 100%;
+}
+
 .fa-hand-point-right {
-    margin-right: 4px;
+    font-size: 1.2rem;
+    margin-right: 6px;
     color: #ee3e3e;
 }
 
