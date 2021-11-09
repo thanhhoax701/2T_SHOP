@@ -434,20 +434,26 @@
     left: 34%;
     width: 500px;
     background-color: var(--white-color);
-    border-radius: 5px;
+    border-radius: 20px;
     overflow: hidden;
     visibility: hidden;
+    box-shadow: 0 0 2px #e96464;
 }
 
-.overlay-close {
+
+/* .overlay-close {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(200, 221, 240, 0.05);
-}
+} */
 
 .auth-form:target {
     visibility: visible;
+}
+
+.overlay {
+    background-color: rgba(223, 110, 214, 0.164);
 }
 
 .auth-form__container {
@@ -519,7 +525,7 @@
 }
 
 .auth-form__text-link {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--primary-color);
 }
 
@@ -551,6 +557,7 @@
 }
 
 .auth-form__socials--facebook {
+    border-radius: 10px;
     color: var(--white-color);
     background-color: #1877f2;
 }
@@ -564,6 +571,7 @@
 }
 
 .auth-form__socials--google {
+    border-radius: 10px;
     color: var(--white-color);
     background-color: #413e49;
 }
@@ -654,7 +662,6 @@ input[type="checkbox"]+.login__form-form+.login__form-form-label:hover span::bef
 .login__form--input {
     border: 1px solid var(--border);
     border-radius: var(--borderRadius);
-    /* box-sizing: border-box; */
     font-size: 1.4rem;
     height: 2.25rem;
     line-height: 1.25rem;
