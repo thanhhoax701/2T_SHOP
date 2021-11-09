@@ -428,11 +428,26 @@
 /* Authen modal */
 
 .auth-form {
+    position: fixed;
+    top: 14%;
+    right: 0;
+    left: 34%;
     width: 500px;
     background-color: var(--white-color);
     border-radius: 5px;
     overflow: hidden;
-    /* display: none; */
+    visibility: hidden;
+}
+
+.overlay-close {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 221, 240, 0.05);
+}
+
+.auth-form:target {
+    visibility: visible;
 }
 
 .auth-form__container {
@@ -463,6 +478,10 @@
 
 /* Register form */
 
+.auth-form__group {
+    position: relative;
+}
+
 .auth-form__input {
     width: 100%;
     height: 40px;
@@ -477,6 +496,15 @@
 
 .auth-form__input:focus {
     border-color: #3d1fe7;
+}
+
+#message {
+    position: absolute;
+    bottom: -30px;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+    display: none;
 }
 
 .auth-form__aside {
@@ -1858,7 +1886,7 @@ figure.snip0058.hover:after {
 }
 
 .sub-menu_link::after {
-    content: "";
+    /* content: "";
     position: absolute;
     width: 0;
     height: 30px;
@@ -1867,11 +1895,23 @@ figure.snip0058.hover:after {
     top: calc(50% - 6px);
     transform: translateY(-50%);
     border-bottom: 1px solid #f30606;
-    transition: width ease-in 0.4s;
+    transition: width ease-in 0.4s; */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 0;
+    top: 18px;
+    bottom: 0;
+    left: 50%;
+    background: none repeat scroll 0 0 transparent;
+    background: #f30606;
+    transition: width 0.3s ease-in-out 0s, left 0.3s ease-in-out 0s;
 }
 
 .sub-menu_link:hover::after {
     width: 100%;
+    left: 0;
 }
 
 .fa-hand-point-right {

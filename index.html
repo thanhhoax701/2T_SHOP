@@ -110,12 +110,16 @@
                                 </span>
                             </a>
                         </li>
-                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate"><span id="header-hover">Đăng ký</span></li>
-                        <li class="header__navbar-item header__navbar-item--strong"><span id="header-hover">Đăng nhập</span></li> -->
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                            <a href="#sign-up" class="header__navbar-icon-link"><span id="header-hover">Đăng ký</span></a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            <a href="#sign-in" class="header__navbar-icon-link"><span id="header-hover">Đăng nhập</span></a>
+                        </li>
 
                         <!-- Trường hợp đã có tài khoản -->
-                        <li class="header__navbar-item header__navbar-user">
-                            <img src="https://avatar-redirect.appspot.com/google/116890675989904356013?size=400" alt="" class="header__navbar-user-img">
+                        <!-- <li class="header__navbar-item header__navbar-user">
+                            <img onerror="this.src='/assets/img/error-img.jpeg'" src="https://avatar-redirect.appspot.com/google/116890675989904356013?size=400" alt="" class="header__navbar-user-img">
                             <div class="header__navbar-user-text">
                                 <span style="--delay: 100ms;">T</span>
                                 <span style="--delay: 200ms;">H</span>
@@ -141,7 +145,7 @@
                                     <a href="">Đăng xuất</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
 
@@ -1908,11 +1912,12 @@
     </div>
 
     <!-- Modal layout -->
-    <!-- <div class="modal">
+    <div class="modal">
         <div class="modal__overlay"></div>
-        <div class="modal__body"> -->
-    <!-- Register form -->
-    <!-- <div class="auth-form">
+        <div class="modal__body">
+            <!-- Register form -->
+            <div class="auth-form" id="sign-up">
+                <a href="#" class="overlay-close"></a>
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -1923,7 +1928,8 @@
                             <input type="text" class="auth-form__input" placeholder="Email của bạn">
                         </div>
                         <div class="auth-form__group">
-                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" id="password">
+                            <p id="message">Password is <span id="strenght"></span></p>
                         </div>
                         <div class="auth-form__group">
                             <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
@@ -1937,7 +1943,9 @@
                         </p>
                     </div>
                     <div class="auth-form__control">
-                        <button class="btn btn--normal auth-form__control-back">TRỞ LẠI</button>
+                        <button class="btn btn--normal auth-form__control-back">
+                            <a href="#" class="btn">TRỞ LẠI</a>
+                        </button>
                         <button class="btn btn--primary auth-form__control-sign">ĐĂNG KÝ</button>
                     </div>
                 </div>
@@ -1952,10 +1960,10 @@
                         <span class="auth-form__socials-title">Kết nối với Google</span>
                     </a>
                 </div>
-            </div> -->
+            </div>
 
-    <!-- Login form -->
-    <!-- <div class="auth-form">
+            <!-- Login form -->
+            <div class="auth-form" id="sign-in">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -1982,7 +1990,9 @@
                         </label>
                     </form>
                     <div class="auth-form__control">
-                        <button class="btn btn--normal auth-form__control-back">TRỞ LẠI</button>
+                        <button class="btn btn--normal auth-form__control-back">
+                            <a href="#" class="btn">TRỞ LẠI</a>
+                        </button>
                         <button class="btn btn--primary auth-form__control-sign">ĐĂNG NHẬP</button>
                     </div>
                     <div class="auth-form__help">
@@ -2002,8 +2012,8 @@
                         <span class="auth-form__socials-title">Đăng nhập với Google</span>
                     </a>
                 </div>
-            </div> -->
-    </div>
+            </div>
+        </div>
     </div>
 
     <!-- JS for slick slider -->
@@ -2012,5 +2022,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/javascript/main.js"></script>
 </body>
+
+</html>
+
+</html>
 
 </html>

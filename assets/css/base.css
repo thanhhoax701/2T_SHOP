@@ -242,6 +242,7 @@ html {
     display: flex;
     animation: fadeIn linear 0.2s;
     z-index: 100;
+    visibility: hidden;
 }
 
 .modal__overlay {
@@ -281,7 +282,7 @@ html {
     background-color: var(--white-color);
 }
 
-.btn.btn--normal:hover {
+.btn.btn--normal :hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
