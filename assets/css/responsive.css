@@ -84,6 +84,25 @@
     .nav__bars-btn {
         margin-left: 9px;
     }
+    .input-search {
+        width: 500px;
+    }
+    .output__search {
+        width: 100%;
+        height: 50vh;
+        overflow-y: auto;
+    }
+    .close-the-search-panel {
+        position: relative;
+        top: 20%;
+    }
+    .close-the-search-panel-title {
+        position: absolute;
+        right: 43%;
+    }
+    .header__search-select {
+        display: none;
+    }
 }
 
 
@@ -151,15 +170,43 @@
     .header__search-select {
         display: none;
     }
-    .header__search-history {
-        position: fixed;
-        width: 100%;
-        top: calc(var(--header-height) + var(--header-sort-bar-height));
-        left: 0;
-        box-shadow: 0 1px 2px var(--primary-color);
-    }
     .header__mobile-search {
         padding: 0;
+    }
+    .input-search {
+        width: 300px;
+    }
+    .output__search {
+        top: 45px;
+        width: 100%;
+        height: 300px;
+        overflow-y: auto;
+    }
+    .output-item {
+        display: none;
+    }
+    .inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 12px;
+    }
+    #inner-hide {
+        display: none;
+    }
+    .thumb {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .thumb-img {
+        margin-left: 22px !important;
+    }
+    .close-the-search-panel {
+        position: relative;
+        top: 20%;
+        margin: 0;
+    }
+    .close-the-search-panel-title {
+        right: 38%;
     }
     .header__logo-img {
         width: 110px;
@@ -195,5 +242,14 @@
     .footer__download-app-link {
         display: block;
         padding: 0 0 10px 8px;
+    }
+}
+
+
+/* 5s */
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .output__search {
+        left: -18px;
     }
 }
