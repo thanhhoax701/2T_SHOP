@@ -21,7 +21,8 @@
 <body>
     <div class="app">
         <!-- Header -->
-        <header class="app__header">
+        <header class="app__header" id="logo">
+            <a href=""></a>
             <div class="grid wide">
                 <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
@@ -212,10 +213,10 @@
                     <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
                     <div class="header__search">
                         <div class="header__search-input-wrap">
-                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm" value autocomplete="off" inputmode="search">
+                            <input type="text" class="input-search" placeholder="Tìm kiếm sản phẩm">
 
                             <!-- Search history -->
-                            <div class="header__search-history">
+                            <!-- <div class="header__search-history">
                                 <h3 class="header__search-heading">Lịch sử tìm kiếm</h3>
                                 <ul class="header__search-history-list">
                                     <li class="header__search-history-item">
@@ -231,6 +232,127 @@
                                         <a href="">Phụ kiện Mavic Air 2 Accessories</a>
                                     </li>
                                 </ul>
+                            </div> -->
+                            <div class="output__search">
+                                <div class="output-item">
+                                    <a href="" class="output-item-title">Deal Sốc 1K - Voucher 500K</a>
+                                    <img src="./assets/img/gumac.webp" alt="" class="gumac-img">
+                                </div>
+                                <div class="history-header">
+                                    <ul class="history-header-search">
+                                        <li class="history-header-search-item">
+                                            <i style="margin-right: 8px;" class="fas fa-history"></i> ghế lười
+                                            <div class="close-history-product">
+                                                <i class="fas fa-times"></i>
+                                            </div>
+                                        </li>
+                                        <li class="history-header-search-item">
+                                            <i style="margin-right: 8px;" class="fas fa-history"></i> giá đỡ laptop
+                                            <div class="close-history-product">
+                                                <i class="fas fa-times"></i>
+                                            </div>
+                                        </li>
+                                        <li class="history-header-search-item">
+                                            <i style="margin-right: 8px;" class="fas fa-history"></i> kệ laptop
+                                            <div class="close-history-product">
+                                                <i class="fas fa-times"></i>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="see-more-header">
+                                        <h3 class="show-more">Xem Thêm
+                                            <i class="fas fa-chevron-down"></i>
+                                        </h3>
+                                    </div>
+                                    <ul class="history-compact">
+                                        <li class="history-compact-item">
+                                            <a href="" class="history-compact-link">
+                                                <i style="margin-right: 8px;" class="fas fa-history"></i> ddr4 16gb</a>
+                                        </li>
+                                        <li class="history-compact-item">
+                                            <a href="" class="history-compact-link">
+                                                <i style="margin-right: 8px;" class="fas fa-history"></i> tai nghe bluetooth</a>
+                                        </li>
+                                        <li class="history-compact-item">
+                                            <a href="" class="history-compact-link">
+                                                <i style="margin-right: 8px;" class="fas fa-history"></i> nồi chiên không dầu</a>
+                                        </li>
+                                        <li class="history-compact-item">
+                                            <a href="" class="history-compact-link">
+                                                <i style="margin-right: 8px;" class="fas fa-history"></i> áo khoác nam</a>
+                                        </li>
+                                        <li class="history-compact-item">
+                                            <a href="" class="history-compact-link">
+                                                <i style="margin-right: 8px;" class="fas fa-history"></i> bàn làm việc</a>
+                                        </li>
+                                    </ul>
+                                    <div class="see-more-header-hide">
+                                        <h3 class="hide-more">Thu Gọn
+                                            <i class="fas fa-chevron-up"></i>
+                                        </h3>
+                                    </div>
+                                    <div class="popular-searches">
+                                        <img src="./assets/img/biểu đồ.png" alt="" class="popular-searches-img">
+                                        <h3 class="popular-searches-title">
+                                            Tìm Kiếm Phổ Biến
+                                        </h3>
+                                    </div>
+                                    <div class="inner">
+                                        <a class="home__inner" href=""><img src="./assets/img/inner/inner-1.jpg" alt="" class="inner__img">
+                                            <span class="inner__title">tẩy tế bào</span>
+                                        </a>
+                                        <a class="home__inner" href=""><img src="./assets/img/inner/inner-2.jpg" alt="" class="inner__img">
+                                            <span class="inner__title">kem chống nắng</span>
+                                        </a>
+                                        <a class="home__inner" href=""><img src="./assets/img/inner/inner-3.jpg" alt="" class="inner__img">
+                                            <span class="inner__title">áo nam</span>
+                                        </a>
+                                    </div>
+                                    <div class="inner">
+                                        <a class="home__inner" href=""><img src="./assets/img/inner/inner-4.jpg" alt="" class="inner__img">
+                                            <span class="inner__title">giày boot nữ</span>
+                                        </a>
+                                        <a class="home__inner" href=""><img src="./assets/img/inner/inner-5.jpg" alt="" class="inner__img">
+                                            <span class="inner__title">quần baggy nữ</span>
+                                        </a>
+                                        <a class="home__inner" href=""><img src="./assets/img/inner/inner-6.jpg" alt="" class="inner__img">
+                                            <span class="inner__title">bốt nữ</span>
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a class="thumb-item" href=""><img src="./assets/img/thumb/thumb-1.png" alt="" class="thumb-img">
+                                            <span class="thumb-title">Đồ Chơi - Mẹ & Bé</span>
+                                        </a>
+                                        <a class="thumb-item" href=""><img style="margin-left: 35px;" src="./assets/img/thumb/thumb-2.png" alt="" class="thumb-img">
+                                            <span class="thumb-title">Thực Phẩm Tươi Sống</span>
+                                        </a>
+                                        <a class="thumb-item" href=""><img style="margin-left: 50px;" src="./assets/img/thumb/thumb-3.png" alt="" class="thumb-img">
+                                            <span class="thumb-title">Điện Thoại - Máy Tính Bảng</span>
+                                        </a>
+                                        <a class="thumb-item" href=""><img src="./assets/img/thumb/thumb-4.png" alt="" class="thumb-img">
+                                            <span class="thumb-title">Làm Đẹp - Sức Khỏe</span>
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a class="thumb-item" href=""><img src="./assets/img/thumb/thumb-5.png" alt="" class="thumb-img thumb-img-fixx">
+                                            <span class="thumb-title">Điện Gia Dụng</span>
+                                        </a>
+                                        <a class="thumb-item" href=""><img src="./assets/img/thumb/thumb-6.png" alt="" class="thumb-img thumb-img-fixx">
+                                            <span class="thumb-title">Thời trang nữ</span>
+                                        </a>
+                                        <a class="thumb-item" href=""><img src="./assets/img/thumb/thumb-7.png" alt="" class="thumb-img thumb-img-fixx">
+                                            <span class="thumb-title">Thời trang nam</span>
+                                        </a>
+                                        <a class="thumb-item" href=""><img src="./assets/img/thumb/thumb-8.png" alt="" class="thumb-img thumb-img-fixx">
+                                            <span class="thumb-title">Giày - Dép nữ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="close-the-search-panel">
+                                    <h3 class="close-the-search-panel-title">Đóng
+                                        <i class="fas fa-times"></i>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                         <div class="header__search-select">
@@ -440,7 +562,8 @@
                     <div class="col l-2 m-0 c-0">
                         <nav class="grid-category">
                             <h3 class="category__heading">
-                                <i class="category__heading-icon fas fa-list-ul"></i> Danh mục
+                                <i class="category__heading-icon fas fa-list-ul"></i>
+                                <span class="auto-input">Danh mục</span>
                             </h3>
 
                             <ul class="category-list">
@@ -1907,7 +2030,7 @@
             </div>
         </div>
         <div class="footer-active-up">
-            <a href=""><i class="footer-active-up-icon fas fa-chevron-up"></i></a>
+            <a href="#logo"><i class="footer-active-up-icon fas fa-chevron-up"></i></a>
         </div>
     </div>
 
@@ -1915,13 +2038,11 @@
     <div class="modal">
         <div class="modal__overlay"></div>
         <div class="modal__body">
-            <!-- Register form -->
             <div class="auth-form" id="sign-up">
-                <!-- <a href="#" class="overlay-close"></a> -->
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                        <span class="auth-form__switch-btn"><a href="#sign-in">Đăng nhập</a></span>
                     </div>
                     <div class="auth-form__form">
                         <div class="auth-form__group">
@@ -1962,31 +2083,31 @@
                 </div>
             </div>
 
-            <!-- Login form -->
+
             <div class="auth-form" id="sign-in">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn">Đăng ký</span>
+                        <span class="auth-form__switch-btn"><a href="#sign-up">Đăng ký</a></span>
                     </div>
                     <form method="get" action="" id="login-form" class="login__form" autocomplete="off" role="main">
                         <h6 class="a11y-hidden"></h6>
                         <div class="login__form-form">
                             <label class="login__form-form-label label-email">
-                                <input class="login__form--input text" name="email" placeholder="Email" tabindex="1" required />
+                                <input class="login__form--input text" name="email" placeholder=" " tabindex="1" required=""/>
                                 <span class="login__form-form-label-span required">Email của bạn</span>
                             </label>
                         </div>
                         <div class="login__form-form">
                             <label class="login__form-form-label label-password">
-                                <input type="password" class="login__form--input text" name="password" placeholder="Password" tabindex="2" required />
+                                <input type="password" class="login__form--input text" name="password" placeholder="" tabindex="2" required=""/>
                                 <span class="login__form-form-label-span required">Mật khẩu của bạn</span>
                             </label>
                         </div>
 
                         <input type="checkbox" name="show-password" class="show-password a11y-hidden" id="show-password" tabindex="3" />
                         <label class="login__form-form-label label-show-password" for="show-password">
-                            <span class="login__form-form-label-span">Hiển thị mật khẩu</span>
+                            <span class="login__form-form-label-span">Nhớ mật khẩu</span>
                         </label>
                     </form>
                     <div class="auth-form__control">
@@ -2020,6 +2141,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./assets/javascript/main.js"></script>
 </body>
 
