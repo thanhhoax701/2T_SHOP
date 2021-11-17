@@ -95,6 +95,8 @@
     .close-the-search-panel {
         position: relative;
         top: 20%;
+        margin-top: -60px;
+        padding: 0 0 10px 0;
     }
     .close-the-search-panel-title {
         position: absolute;
@@ -102,6 +104,9 @@
     }
     .header__search-select {
         display: none;
+    }
+    .auth-form {
+        left: 20%;
     }
 }
 
@@ -203,7 +208,8 @@
     .close-the-search-panel {
         position: relative;
         top: 20%;
-        margin: 0;
+        margin-top: -24px;
+        padding: 0 0 6px 0;
     }
     .close-the-search-panel-title {
         right: 38%;

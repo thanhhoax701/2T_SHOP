@@ -39,12 +39,12 @@ $(document).ready(function() {
 });
 
 // Danh mục
-var typed = new Typed(".auto-input", {
-    strings: ["Danh mục", "Danh Mục", "DANH MỤC"],
-    typeSpeed: 100,
-    backSpeed: 100,
-    loop: true
-});
+// var typed = new Typed(".auto-input", {
+//     strings: ["Danh mục", "Danh Mục", "DANH MỤC"],
+//     typeSpeed: 100,
+//     backSpeed: 100,
+//     loop: true
+// });
 
 // Password
 var pass = document.getElementById("password");
@@ -73,8 +73,72 @@ pass.addEventListener('input', () => {
 
 });
 
-// History search
 var container = {
+    logUpIn: function() {
+        var clickSignUp = document.querySelector('span[title="sign-up"]');
+        var showSignUp = document.querySelector('#sign-up');
+        var closeSignUp = document.querySelector('.btn-close-sign-up');
+        var signIn = document.querySelector('.sign-in');
+
+        clickSignUp.addEventListener('click', function() {
+            showSignUp.style.display = 'flex'
+        })
+
+        closeSignUp.addEventListener('click', function() {
+            showSignUp.style.display = 'none'
+        })
+
+        signIn.addEventListener('click', function() {
+            showSignUp.style.display = 'none'
+            showSignIn.style.display = 'block'
+        })
+
+
+        var clickSignIn = document.querySelector('span[title="sign-in"]')
+        var showSignIn = document.querySelector('#sign-in');
+        var closeSignIn = document.querySelector('.btn-close-sign-in');
+        var signUp = document.querySelector('.sign-up');
+
+        clickSignIn.addEventListener('click', function() {
+            showSignIn.style.display = 'flex'
+        })
+
+        closeSignIn.addEventListener('click', function() {
+            showSignIn.style.display = 'none'
+        })
+
+        signUp.addEventListener('click', function() {
+            showSignIn.style.display = 'none'
+            showSignUp.style.display = 'block'
+        })
+
+        // Forgot Password
+        var forgotPassword = document.querySelector('.auth-form__help--forgot-password');
+        var showForgotPassword = document.querySelector('#forgot-password');
+        var closeForgotPassword = document.querySelector('span[class="auth-form__switch-btn close"]')
+
+        forgotPassword.addEventListener('click', function() {
+            showSignIn.style.display = 'none'
+            showForgotPassword.style.display = 'block'
+        })
+
+        closeForgotPassword.addEventListener('click', function() {
+            showForgotPassword.style.display = 'none'
+        })
+
+        // Mobile and Tablet
+        var signUpMobile = document.querySelector('#sign-up-mobile');
+        var signInMobile = document.querySelector('#sign-in-mobile');
+
+        signUpMobile.addEventListener('click', function() {
+            showSignUp.style.display = 'block'
+        })
+
+        signInMobile.addEventListener('click', function() {
+            showSignIn.style.display = 'block'
+        })
+    },
+
     showInput: function() {
         var showMore = document.querySelector('.show-more');
         var historyCompact = document.querySelector('.history-compact');
@@ -85,6 +149,7 @@ var container = {
         var nameProductTwo = document.querySelectorAll('.history-header-search-item')[1];
         var closeProductThree = document.querySelectorAll('.close-history-product')[2];
         var nameProductThree = document.querySelectorAll('.history-header-search-item')[2];
+
         closeProduct.addEventListener('click', function() {
             nameProduct.style.display = 'none';
         })
@@ -124,11 +189,10 @@ var container = {
             outPutSearch.style.display = 'none'
         })
     },
-
     start: function() {
         this.showInput();
         this.showHistoryBtn();
+        this.logUpIn();
     }
 };
-
 container.start();

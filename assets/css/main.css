@@ -436,16 +436,8 @@
     background-color: var(--white-color);
     border-radius: 20px;
     overflow: hidden;
-    visibility: hidden;
+    /* display: none; */
     box-shadow: 0 0 2px #e96464;
-}
-
-.auth-form:target {
-    visibility: visible;
-}
-
-.overlay {
-    background-color: rgba(223, 110, 214, 0.164);
 }
 
 .auth-form__container {
@@ -465,6 +457,10 @@
     font-size: 2.2rem;
     font-weight: 400;
     color: var(--text-color);
+}
+
+.auth-form__heading--forgot {
+    color: red;
 }
 
 .auth-form__switch-btn,
@@ -498,6 +494,10 @@
     border-color: #3d1fe7;
 }
 
+.auth-form__input--forgot {
+    margin-top: 2px;
+}
+
 #message {
     position: absolute;
     bottom: -30px;
@@ -529,11 +529,16 @@
     justify-content: center;
 }
 
+.auth-form__control--forgot {
+    margin-top: 18px;
+}
+
 .auth-form__control-back {
     margin-right: 10px;
 }
 
-.auth-form__control-sign:hover {
+.auth-form__control-sign:hover,
+.auth-form__control-sign:focus {
     color: #fff;
     background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
 }
@@ -788,6 +793,9 @@ input[type="checkbox"]:checked+.login__form-form-label span::after {
     outline: 1px dashed hsl(var(--fgColorH), calc(var(--fgColorS) * 2), calc(var(--fgColorL) * 1.15));
     outline-offset: 2px;
 }
+
+
+/* Forgot password */
 
 
 /* Header with search */
@@ -1284,7 +1292,7 @@ input[type="checkbox"]:checked+.login__form-form-label span::after {
 
 .input-search {
     height: 40px;
-    width: 700px;
+    width: 810px;
     border: 0;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
