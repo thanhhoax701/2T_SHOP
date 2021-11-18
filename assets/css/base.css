@@ -348,6 +348,12 @@ a {
     background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
 }
 
+#eye1,
+#eye2,
+#eye3 {
+    color: #f73333 !important;
+}
+
 
 /* Vô hiệu hóa nút bấm */
 

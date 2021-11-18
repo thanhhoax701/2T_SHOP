@@ -498,6 +498,22 @@
     margin-top: 2px;
 }
 
+#eye1,
+#eye2 {
+    background: #fff;
+    color: #333;
+    margin: -24px 0 0 0;
+    margin-left: -20px;
+    padding: 0 9px 0 0;
+    border-radius: 0px 5px 5px 0px;
+    float: right;
+    position: relative;
+    right: 1%;
+    top: 2%;
+    z-index: 5;
+    cursor: pointer;
+}
+
 #message {
     position: absolute;
     bottom: -30px;
@@ -684,6 +700,19 @@ input[type="checkbox"]+.login__form-form+.login__form-form-label:hover span::bef
     color: hsl(var(--fgColorH), calc(var(--fgColorS) * 2), calc(var(--fgColorL) * 1.15));
 }
 
+#eye3 {
+    background: #fff;
+    color: #333;
+    margin-left: -20px;
+    border-radius: 0px 5px 5px 0px;
+    float: right;
+    position: relative;
+    left: 100%;
+    top: 42px;
+    z-index: 5;
+    cursor: pointer;
+}
+
 input[type="submit"] {
     color: hsl(var(--bgColorH), var(--bgColorS), var(--bgColorL));
     background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
@@ -795,7 +824,96 @@ input[type="checkbox"]:checked+.login__form-form-label span::after {
 }
 
 
-/* Forgot password */
+/* Sign in/up Mobile */
+
+.login-gmail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white-color);
+    z-index: 999999;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.back-home-mobile {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--white-color);
+    top: 15px;
+    left: 15px;
+}
+
+.login-banner-img {
+    width: 100%;
+}
+
+.steps-login {
+    display: grid;
+}
+
+.login-banner-title {
+    font-size: 2.4rem;
+    margin: 10px 20px;
+    font-weight: 500;
+    color: #242424;
+}
+
+.login-of {
+    font-size: 1.4rem;
+    color: #242424;
+    margin: 10px 20px;
+}
+
+.input-of-emai {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    font-size: 2.4rem;
+    color: #242424;
+    margin: 10px 0;
+}
+
+.button-of-next {
+    background-color: rgb(255, 66, 78);
+    margin: 10px;
+    width: 95%;
+    padding: 15px 0;
+    outline: none;
+    border: 1px solid rgb(255, 66, 78);
+    border-radius: 8px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.login-equal {
+    text-align: center;
+    margin: 20px 0;
+    display: block;
+    font-size: 1.4rem;
+}
+
+.login-or {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 100px;
+}
+
+.login-or-title {
+    font-size: 1.4rem;
+    color: rgb(120, 120, 120);
+    margin-bottom: 20px;
+}
+
+.accept {
+    color: rgb(120, 120, 120);
+    font-size: 1.4rem;
+}
 
 
 /* Header with search */
@@ -2301,6 +2419,10 @@ figure.snip0058.hover:after {
 
 .home-product-item__like {
     font-size: 1.3rem;
+}
+
+i.home-product-item__like-icon-empty {
+    display: block;
 }
 
 i.home-product-item__like-icon-fill {

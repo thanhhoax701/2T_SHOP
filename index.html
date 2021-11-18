@@ -2036,11 +2036,13 @@
                         <input type="text" class="auth-form__input" placeholder="Email của bạn">
                     </div>
                     <div class="auth-form__group">
-                        <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" id="password">
+                        <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn" id="password1" required>
+                        <i class="fas fa-eye" aria-hidden="true" type="button" id="eye1"></i>
                         <p id="message">Password is <span id="strenght"></span></p>
                     </div>
                     <div class="auth-form__group">
-                        <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu" id="password2" required>
+                        <i class="fas fa-eye" aria-hidden="true" type="button" id="eye2"></i>
                     </div>
                 </div>
                 <div class="auth-form__aside">
@@ -2084,15 +2086,16 @@
                     <h6 class="a11y-hidden"></h6>
                     <div class="login__form-form">
                         <label class="login__form-form-label label-email">
-                                <input class="login__form--input text" name="email" placeholder=" " tabindex="1" required=""/>
-                                <span class="login__form-form-label-span required">Email của bạn</span>
-                            </label>
+                            <input class="login__form--input text" name="email" placeholder=" "required/>
+                            <span class="login__form-form-label-span required">Email của bạn</span>
+                        </label>
                     </div>
                     <div class="login__form-form">
                         <label class="login__form-form-label label-password">
-                                <input type="password" class="login__form--input text" name="password" placeholder="" tabindex="2" required=""/>
-                                <span class="login__form-form-label-span required">Mật khẩu của bạn</span>
-                            </label>
+                            <input type="password" class="login__form--input text" placeholder="" required id="password3"/>
+                            <span class="login__form-form-label-span required">Mật khẩu của bạn</span>
+                            <i class="fas fa-eye" aria-hidden="true" type="button" id="eye3"></i>
+                        </label>
                     </div>
 
                     <input type="checkbox" name="show-password" class="show-password a11y-hidden" id="show-password" tabindex="3" />
@@ -2133,7 +2136,7 @@
             <div class="auth-form__container">
                 <div class="auth-form__header">
                     <h3 class="auth-form__heading auth-form__heading--forgot">Quên mật khẩu</h3>
-                    <span class="auth-form__switch-btn close">Trở về</span>
+                    <span class="auth-form__switch-btn btn-close-sign-in">Đăng nhập</span>
                 </div>
                 <div class="auth-form__form">
                     <div class="auth-form__group">
@@ -2141,7 +2144,12 @@
                     </div>
                 </div>
                 <div class="auth-form__control auth-form__control--forgot">
-                    <button class="btn btn-forgot auth-form__control-sign"><span>LẤY LẠI MẬT KHẨU</span></button>
+                    <button class="btn btn--normal auth-form__control-back">
+                        <span class="btn btn-close">TRỞ LẠI</span>
+                    </button>
+                    <button class="btn btn-forgot auth-form__control-sign">
+                        <span>LẤY LẠI MẬT KHẨU</span>
+                    </button>
                 </div>
             </div>
             <div class="auth-form__socials">
@@ -2157,12 +2165,48 @@
         </div>
     </div>
 
+
+    <!-- Sign up/in Mobile -->
+    <div class="login-gmail">
+        <div class="back-home-mobile">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="login-banner">
+            <img src="./assets/img/login.png" alt="" class="login-banner-img">
+        </div>
+        <div class="steps-login">
+            <h3 class="login-banner-title">Xin chào,</h3>
+            <p class="login-of">Đăng nhập hoặc Tạo tài khoản</p>
+            <input type="text" class="input-of-emai" placeholder="Số điện thoại">
+            <button class="button-of-next">Tiếp Tục</button>
+            <a href="" class="login-equal">Đăng nhập bằng email</a>
+        </div>
+        <div class="login-or">
+            <span class="login-or-title">Hoặc tiếp tục bằng</span>
+            <div class="social-network">
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">Kết nối với Google</span>
+                    </a>
+                </div>
+            </div>
+            <div class="accept">Bằng việc tiếp tục, bạn đã chấp nhận điều khoản sử dụng</div>
+        </div>
+    </div>
+
     <!-- JS for slick slider -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./assets/javascript/main.js"></script>
 </body>
+
+</html>
 
 </html>

@@ -39,19 +39,19 @@ $(document).ready(function() {
 });
 
 // Danh mục
-// var typed = new Typed(".auto-input", {
-//     strings: ["Danh mục", "Danh Mục", "DANH MỤC"],
-//     typeSpeed: 100,
-//     backSpeed: 100,
-//     loop: true
-// });
+var typed = new Typed(".auto-input", {
+    strings: ["Danh mục", "Danh Mục", "DANH MỤC"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+});
 
 // Password
-var pass = document.getElementById("password");
+var pass = document.getElementById("password1");
 var msg = document.getElementById("message");
 var str = document.getElementById("strenght");
 
-pass.addEventListener('input', () => {
+pass.addEventListener('input', function() {
     if (pass.value.length > 0) {
         msg.style.display = "block";
     } else {
@@ -115,7 +115,8 @@ var container = {
         // Forgot Password
         var forgotPassword = document.querySelector('.auth-form__help--forgot-password');
         var showForgotPassword = document.querySelector('#forgot-password');
-        var closeForgotPassword = document.querySelector('span[class="auth-form__switch-btn close"]')
+        var closeForgotPassword = document.querySelector('.btn-close');
+        var nextSignIn = document.querySelector('span[class="auth-form__switch-btn btn-close-sign-in"]');
 
         forgotPassword.addEventListener('click', function() {
             showSignIn.style.display = 'none'
@@ -124,6 +125,12 @@ var container = {
 
         closeForgotPassword.addEventListener('click', function() {
             showForgotPassword.style.display = 'none'
+            showSignIn.style.display = 'block'
+        })
+
+        nextSignIn.addEventListener('click', function() {
+            showForgotPassword.style.display = 'none'
+            showSignIn.style.display = 'block'
         })
 
         // Mobile and Tablet
@@ -189,10 +196,44 @@ var container = {
             outPutSearch.style.display = 'none'
         })
     },
+
     start: function() {
+        this.logUpIn();
+        // this.showPassword();
         this.showInput();
         this.showHistoryBtn();
-        this.logUpIn();
     }
 };
 container.start();
+
+
+// Show and hide password
+// 
+const togglePassword = document.querySelector('#eye1');
+const password = document.querySelector('#password1');
+
+togglePassword.addEventListener('click', function(e) {
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
+
+// 
+const togglePassword2 = document.querySelector('#eye2');
+const password2 = document.querySelector('#password2');
+
+togglePassword2.addEventListener('click', function(e) {
+    const type = password2.getAttribute('type') === 'password' ? 'text' : 'password';
+    password2.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
+
+// 
+const togglePassword3 = document.querySelector('#eye3');
+const password3 = document.querySelector('#password3');
+
+togglePassword3.addEventListener('click', function(e) {
+    const type = password3.getAttribute('type') === 'password' ? 'text' : 'password';
+    password3.setAttribute('type', type);
+    this.classList.toggle('fa-eye-slash');
+});
