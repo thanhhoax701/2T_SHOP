@@ -111,11 +111,31 @@
                                 </span>
                             </a>
                         </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            <span id="header-hover" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fas fa-globe"></i>
+                                Ngôn ngữ
+                            </span>
+                            <ul class="header__navbar-languages-menu">
+                                <li class="header__navbar-language-item">
+                                    <a href="">
+                                        <img class="header__navbar-language-img" src="./assets/img/language/vietnam.png" alt="tieng-viet">
+                                        <span>Tiếng Việt</span>
+                                    </a>
+                                </li>
+                                <li class="header__navbar-language-item">
+                                    <a href="">
+                                        <img class="header__navbar-language-img" src="./assets/img/language/english.png" alt="tieng-viet">
+                                        <span>English</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
-                            <span id="header-hover" class="header__navbar-icon-link" title="sign-up">Đăng ký</span>
+                            <span id="header-hover" class="header__navbar-icon-link" title="Sign-up">Đăng ký</span>
                         </li>
                         <li class="header__navbar-item header__navbar-item--strong">
-                            <span id="header-hover" class="header__navbar-icon-link" title="sign-in">Đăng nhập</span>
+                            <span id="header-hover" class="header__navbar-icon-link" title="Sign-in">Đăng nhập</span>
                         </li>
 
                         <!-- Trường hợp đã có tài khoản -->
@@ -175,13 +195,13 @@
                             <li class="nav__mobile-item">
                                 <a href="#" class="nav__mobile-link">
                                     <i class="nav-btn fas fa-registered"></i>
-                                    <span id="sign-up-mobile">Đăng ký</span>
+                                    <span id="sign-up">Đăng ký</span>
                                 </a>
                             </li>
                             <li class="nav__mobile-item">
                                 <a href="#" class="nav__mobile-link">
                                     <i class="nav-btn fas fa-sign-in-alt"></i>
-                                    <span id="sign-in-mobile">Đăng nhập</span>
+                                    <span id="sign-in">Đăng nhập</span>
                                 </a>
                             </li>
                             <li class="nav__mobile-item">
@@ -363,12 +383,13 @@
                     </div>
 
                     <!-- Cart layout -->
-                    <div class="header__cart">
+                    <label for="mobile-cart-checkbox" class="header__cart">
                         <div class="header__cart-wrap">
                             <i class="header__cart-icon fas fa-shopping-cart"></i>
                             <span class="header__cart-notice">4</span>
 
                             <!-- No cart: header__cart-list--no-cart -->
+                            <input type="checkbox" hidden id="mobile-cart-checkbox" class="header__cart-checkbox">
                             <div class="header__cart-list">
                                 <img src="./assets/img/empty-cart.webp" alt="" class="header__cart-no-cart-img">
                                 <!-- <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span> -->
@@ -456,7 +477,7 @@
                                 <button class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</button>
                             </div>
                         </div>
-                    </div>
+                    </label>
                 </div>
             </div>
             <ul class="header__sort-bar">
@@ -559,7 +580,7 @@
                                         Tivi - Loa - Dàn Karaoke
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">TIVI
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -613,7 +634,7 @@
                                         Tủ lạnh - Tủ đông - Tủ mát
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">TỦ LẠNH
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -653,7 +674,7 @@
                                         Máy giặt - Sấy quần áo
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">MÁY GIẶT
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -705,7 +726,7 @@
                                         Máy lạnh - Quạt điều hòa
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">MÁY LẠNH
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -763,7 +784,7 @@
                                         Điện gia dụng - Dụng cụ
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">NỒI - BẾP - LÒ
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -819,7 +840,7 @@
                                         Đồ dùng nhà bếp - Mẹ và bé
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">VẬT DỤNG
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -875,7 +896,7 @@
                                         Lọc nước - Máy nước nóng
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">LỌC NƯỚC
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -917,7 +938,7 @@
                                         Điện thoại - Laptop - Tablet
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">ĐIỆN THOẠI
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -980,7 +1001,7 @@
                                         Máy ảnh - Máy in
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">MÁY ẢNH
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -1041,7 +1062,7 @@
                                         Phụ kiện - Đồng hồ
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">ĐỒNG HỒ
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -1099,7 +1120,7 @@
                                         King nghiệm hay - Mẹo vặt
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">KINH NGHIỆM - MẸO VẶT
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -1116,12 +1137,12 @@
                                         </aside>
                                     </div>
                                 </li>
-                                <li class="category-item">
+                                <!-- <li class="category-item">
                                     <a href="#" class="category-item__link category-item__link-separate">
                                         Top sản phẩm
                                         <div class="category-item--active"></div>
                                     </a>
-                                    <div id="sub-menu-1" class="sub-menu">
+                                    <div id="sub-menu" class="sub-menu">
                                         <aside>
                                             <p class="sub-menu-item__title">Top sản phẩm
                                                 <a href="" class="sub-menu_label">Xem tất cả
@@ -1137,7 +1158,7 @@
                                             </ul>
                                         </aside>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
                         </nav>
                     </div>
@@ -1214,9 +1235,6 @@
                                 </li>
                                 <li class="mobile-category__item">
                                     <a href="" class="mobile-category__link">Kinh nghiệm hay - Mẹo vặt</a>
-                                </li>
-                                <li class="mobile-category__item">
-                                    <a href="" class="mobile-category__link">Top sản phẩm</a>
                                 </li>
                             </ul>
                         </nav>
@@ -2023,7 +2041,7 @@
 
     <!-- Modal layout -->
     <!-- Sign up -->
-    <div class="modal__body" id="sign-up">
+    <div class="modal__body" id="Sign-up">
         <div class="modal__overlay"></div>
         <div class="auth-form">
             <div class="auth-form__container">
@@ -2074,7 +2092,7 @@
     </div>
 
     <!-- Sign in -->
-    <div class="modal__body" id="sign-in">
+    <div class="modal__body" id="Sign-in">
         <div class="modal__overlay"></div>
         <div class="auth-form">
             <div class="auth-form__container">
@@ -2100,8 +2118,8 @@
 
                     <input type="checkbox" name="show-password" class="show-password a11y-hidden" id="show-password" tabindex="3" />
                     <label class="login__form-form-label label-show-password" for="show-password">
-                            <span class="login__form-form-label-span">Nhớ mật khẩu</span>
-                        </label>
+                        <span class="login__form-form-label-span">Nhớ mật khẩu</span>
+                    </label>
                 </form>
                 <div class="auth-form__control">
                     <button class="btn btn--normal auth-form__control-back">
@@ -2167,8 +2185,33 @@
 
 
     <!-- Sign up/in Mobile -->
-    <div class="login-gmail">
+    <div class="logup-mobile">
         <div class="back-home-mobile">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="logup-banner">
+            <img src="./assets/img/login.png" alt="" class="logup-banner-img">
+        </div>
+        <div class="steps-logup">
+            <h3 class="logup-banner-title">Xin chào,</h3>
+            <p class="logup-of">Đăng ký tài khoản hoặc đăng nhập</p>
+            <input type="text" class="input-of-email" placeholder="Email/Số điện thoại">
+            <button class="button-of-next">Đăng ký</button>
+            <span class="logup-equal">Đăng nhập bằng email</span>
+        </div>
+        <div class="logup-or">
+            <span class="logup-or-title">Hoặc tiếp tục bằng</span>
+            <div class="social-network">
+                <img src="./assets/img/login-up/facebook.png" alt="" class="social-network-img">
+                <img src="./assets/img/login-up/google.png" alt="" class="social-network-img">
+                <img src="./assets/img/login-up/zalo.png" alt="" class="social-network-img">
+            </div>
+            <div class="accept">Bằng việc đăng ký, bạn đã chấp nhận <a href="">điều khoản sử dụng</a></div>
+        </div>
+    </div>
+
+    <div class="login-mobile">
+        <div class="back-home-mobile back-to-home" id="back-home">
             <i class="fas fa-chevron-left"></i>
         </div>
         <div class="login-banner">
@@ -2176,26 +2219,18 @@
         </div>
         <div class="steps-login">
             <h3 class="login-banner-title">Xin chào,</h3>
-            <p class="login-of">Đăng nhập hoặc Tạo tài khoản</p>
-            <input type="text" class="input-of-emai" placeholder="Số điện thoại">
+            <p class="login-of">Nhập email của bạn để tiếp tục</p>
+            <input type="email" class="input-of-email" placeholder="abc@gmail.com">
             <button class="button-of-next">Tiếp Tục</button>
-            <a href="" class="login-equal">Đăng nhập bằng email</a>
         </div>
         <div class="login-or">
             <span class="login-or-title">Hoặc tiếp tục bằng</span>
             <div class="social-network">
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
-                        <span class="auth-form__socials-title">Kết nối với Facebook</span>
-                    </a>
-                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title">Kết nối với Google</span>
-                    </a>
-                </div>
+                <img src="./assets/img/login-up/facebook.png" alt="" class="social-network-img">
+                <img src="./assets/img/login-up/google.png" alt="" class="social-network-img">
+                <img src="./assets/img/login-up/zalo.png" alt="" class="social-network-img">
             </div>
-            <div class="accept">Bằng việc tiếp tục, bạn đã chấp nhận điều khoản sử dụng</div>
+            <div class="accept">Bằng việc tiếp tục, bạn đã chấp nhận <a href="">điều khoản sử dụng</a></div>
         </div>
     </div>
 
@@ -2206,7 +2241,5 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./assets/javascript/main.js"></script>
 </body>
-
-</html>
 
 </html>

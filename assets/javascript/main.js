@@ -75,8 +75,8 @@ pass.addEventListener('input', function() {
 
 var container = {
     logUpIn: function() {
-        var clickSignUp = document.querySelector('span[title="sign-up"]');
-        var showSignUp = document.querySelector('#sign-up');
+        var clickSignUp = document.querySelector('span[title="Sign-up"]');
+        var showSignUp = document.querySelector('#Sign-up');
         var closeSignUp = document.querySelector('.btn-close-sign-up');
         var signIn = document.querySelector('.sign-in');
 
@@ -94,8 +94,8 @@ var container = {
         })
 
 
-        var clickSignIn = document.querySelector('span[title="sign-in"]')
-        var showSignIn = document.querySelector('#sign-in');
+        var clickSignIn = document.querySelector('span[title="Sign-in"]')
+        var showSignIn = document.querySelector('#Sign-in');
         var closeSignIn = document.querySelector('.btn-close-sign-in');
         var signUp = document.querySelector('.sign-up');
 
@@ -133,16 +133,35 @@ var container = {
             showSignIn.style.display = 'block'
         })
 
-        // Mobile and Tablet
-        var signUpMobile = document.querySelector('#sign-up-mobile');
-        var signInMobile = document.querySelector('#sign-in-mobile');
+        // Tablet - Mobile
+        var signUpTM = document.querySelector('#sign-up');
+        var showUp = document.querySelector('.logup-mobile');
+        var signInTM = document.querySelector('#sign-in');
+        var showIn = document.querySelector('.login-mobile');
+        var closeForm1 = document.querySelector('.back-home-mobile');
+        var closeForm2 = document.querySelector('#back-home');
+        var nextEmail = document.querySelector('.logup-equal');
 
-        signUpMobile.addEventListener('click', function() {
-            showSignUp.style.display = 'block'
+        signUpTM.addEventListener('click', function() {
+            showUp.style.display = 'block'
         })
 
-        signInMobile.addEventListener('click', function() {
-            showSignIn.style.display = 'block'
+        signInTM.addEventListener('click', function() {
+            showIn.style.display = 'block'
+        })
+
+        closeForm1.addEventListener('click', function() {
+            showUp.style.display = 'none'
+        })
+
+        closeForm2.addEventListener('click', function() {
+            showIn.style.display = 'none'
+            showUp.style.display = 'block'
+        })
+
+        nextEmail.addEventListener('click', function() {
+            showUp.style.display = 'none'
+            showIn.style.display = 'block'
         })
     },
 
@@ -199,7 +218,6 @@ var container = {
 
     start: function() {
         this.logUpIn();
-        // this.showPassword();
         this.showInput();
         this.showHistoryBtn();
     }
