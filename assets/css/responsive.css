@@ -62,6 +62,13 @@
     .nav__pc {
         display: none;
     }
+    .discount__product--title:hover {
+        color: #e41728;
+        font-weight: 600;
+    }
+    .discount__product--title::after {
+        display: none;
+    }
 }
 
 
@@ -235,13 +242,6 @@
     }
     .footer__content {
         padding: 0 16px;
-    }
-    .footer__heading {
-        text-align: center;
-    }
-    .footer__download,
-    .footer-item__link {
-        justify-content: center;
     }
     .footer__download-apps {
         flex: unset;

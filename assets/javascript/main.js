@@ -216,10 +216,48 @@ var container = {
         })
     },
 
+    productFreeShip: function() {
+        var freeShipFull = document.querySelector('.product-free-ship');
+        var freeShipPrev = document.querySelector('.product-move-prev');
+        var freeShipNext = document.querySelector('.product-move-next');
+
+        freeShipNext.addEventListener('click', function() {
+            freeShipFull.style.transform = 'translateX(-100%)';
+            freeShipPrev.style.display = 'block';
+            freeShipNext.style.display = 'none';
+        });
+
+        freeShipPrev.addEventListener('click', function() {
+            freeShipFull.style.transform = 'translateX(0)';
+            freeShipPrev.style.display = 'none';
+            freeShipNext.style.display = 'block';
+        });
+    },
+
+    productDiscount: function() {
+        var discount = document.querySelector('.discount__product--full');
+        var prevDiscount = document.querySelector('.discount__product--prev');
+        var nextDiscount = document.querySelector('.discount__product--next');
+
+        nextDiscount.addEventListener('click', function() {
+            discount.style.transform = 'translateX(-100%)';
+            prevDiscount.style.display = 'block';
+            nextDiscount.style.display = 'none';
+        })
+
+        prevDiscount.addEventListener('click', function() {
+            discount.style.transform = 'translateX(0)';
+            prevDiscount.style.display = 'none';
+            nextDiscount.style.display = 'block';
+        })
+    },
+
     start: function() {
         this.logUpIn();
         this.showInput();
         this.showHistoryBtn();
+        this.productFreeShip();
+        this.productDiscount();
     }
 };
 container.start();

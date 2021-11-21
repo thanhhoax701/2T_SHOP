@@ -8,6 +8,7 @@
     --star-gold-color: #ffce3e;
     --sale-color: #fbd233;
     --footer-text-color: #737373;
+    --font-color: rgb(255, 66, 78);
     /* height */
     --header-height: 120px;
     --navbar-height: 34px;
@@ -177,6 +178,13 @@ a {
     /* 100% {
         box-shadow: 5px 5px 20px rgb(245, 106, 106), -5px -5px 20px rgb(245, 106, 106);
     } */
+}
+
+@keyframes productShock {
+    50% {
+        transform: scale(1.3);
+        opacity: 0.3;
+    }
 }
 
 @keyframes running-rat {
